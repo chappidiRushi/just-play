@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "JustPlay",
+  "version": "1.0",
+  "description": "To play Imdb movie in VidSrc",
+  "permissions": [
+    "activeTab"
+  ],
+  "icons":{
+"16": "icon16.png",
+"48": "icon48.png",
+"128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.imdb.com/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
